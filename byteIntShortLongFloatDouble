@@ -1,0 +1,42 @@
+package com.company;
+public class Main{
+
+    public static void main(String[] args)
+    {
+        int a=10000;
+        int b = Integer.MIN_VALUE;
+        int c = Integer.MAX_VALUE;
+        System.out.println("MIN VALUE OF INTEGER IS " + b);
+        System.out.println("MAX VALUE OF INTEGER IS " + c);
+
+        short d = (short)100000;
+        short e = Short.MIN_VALUE;
+        short f = Short.MAX_VALUE;
+        System.out.println("MIN VALUE OF SHORT IS " + e);
+        System.out.println("MAX VALUE OF SHORT IS " + f);
+        float g= (float)100.0;
+        float myMinFloatValue = Float.MIN_VALUE;
+        float myMaxFloatValue = Float.MAX_VALUE;
+        System.out.println("Float minimum value = " + myMinFloatValue);
+        System.out.println("Float maximum value = " +myMaxFloatValue);
+
+        double h=(double) 10000000.0;
+        double myMinDoubleValue = Double.MIN_VALUE;
+        double myMaxDoubleValue = Double.MAX_VALUE;
+        System.out.println("Double minimum value = " + myMinDoubleValue);
+        System.out.println("Double maximum value = " +myMaxDoubleValue);
+
+        byte byteValue = 10;
+        short shortValue = 20;
+        int intValue = 50;
+
+        long longTotal = 50000L + 10L * (byteValue + shortValue + intValue);
+        System.out.println(longTotal);
+
+        short shortTotal = (short) (1000 + 10 *
+                (byteValue + shortValue + intValue));
+
+
+
+    }
+}
