@@ -1,0 +1,37 @@
+package com.company;
+
+public class METHODS
+{
+
+    public static void main(String[] args) 
+      {
+        boolean truthValue = true;
+        int a = 9905;
+        int currentlevel = 6;
+        int b = 66255;
+
+        calculateScore(truthValue, a, currentlevel, b);
+
+        a = 10000;
+        currentlevel = 8;
+        b = 200;
+
+        calculateScore(truthValue, a, currentlevel, b);
+
+
+    }
+
+    public static int calculateScore(boolean truthValue,int a, int currentlevel, int b) {
+
+        if(truthValue) {
+            int finalScore = a + (currentlevel * b);
+            finalScore += 2000;
+            System.out.println("Your final a was " + finalScore);
+            return finalScore;
+        }
+
+        return -1;
+
+    }
+
+}
