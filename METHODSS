@@ -1,0 +1,35 @@
+public class methodChallenge
+{
+    public static void main(String[] args)
+    {
+        int a=1500 , b = 400 , c = 900 , d = 50;
+        int ret;
+        ret = calculateHighScorePosition(a);
+        displayHighScorePosition("HARSH",ret);
+        ret = calculateHighScorePosition(b);
+        displayHighScorePosition("UTKARSH",ret);
+        ret = calculateHighScorePosition(c);
+        displayHighScorePosition("AJIT",ret);
+        ret = calculateHighScorePosition(d);
+        displayHighScorePosition("SHWETA",ret);
+    }
+    public static void displayHighScorePosition(String name,int position)
+    {
+        System.out.println(name +" was able to score "+ position + " on the high score table");
+    }
+    public static int calculateHighScorePosition(int score)
+    {
+        int rValue=0;
+        if (score >= 1000)
+            rValue=1;
+        else if (score<1000 && score >= 500)
+            rValue = 2;
+        else if (score <500 && score >=100)
+            rValue = 3;
+        else
+            rValue = 4;
+        return rValue;
+
+    }
+
+}
